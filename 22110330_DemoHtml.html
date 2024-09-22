@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create CV</title>
+  <style>
+    .gender{
+        display: inline-block;
+        margin-top: 24px;
+    }
+    body {
+      font-family: sans-serif;
+    }
+
+    .left{
+        display: inline-block;
+        width: 45%;
+        align-items: left;
+        
+    }
+
+    .right{
+        position: static;
+        display: inline-block;
+        width: 45%;
+        margin-left: 50px;
+        align-items: right;
+        right: 0;
+    }
+
+    .container {
+      width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="align-content: center;">Create CV</h1>
+    <div class="left">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="gender" class="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" class="gender">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" class="gender">Female</label>
+    
+        <label for="phone" style="margin-top: 23px;">Phone number:</label>
+        <input type="text" id="phone" name="phone">
+    </div>
+    <div class="right">
+        <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="dob">Date of birth:</label>
+    <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+    </div>
+
+    <label for="introduce">Introduce:</label>
+    <textarea id="introduce" name="introduce"></textarea>
+
+    <label for="certificates">Certificates:</label>
+    <textarea id="certificates" name="certificates"></textarea>
+
+    <label for="skills">Skills:</label>
+    <textarea id="skills" name="skills"></textarea>
+
+    <label for="education">Educational level:</label>
+    <textarea id="education" name="education"></textarea>
+    <label for="experience">Working Experience:</label>
+    <textarea id="experience" name="experience"></textarea>
+
+    <button type="submit">Create CV</button>
+  </div>
+</body>
+</html>
